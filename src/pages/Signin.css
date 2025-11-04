@@ -1,0 +1,160 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('../components/assest/Loginpage.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 2rem;
+}
+
+.signup-content {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.brand-logo {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.signup-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Date input specific styling */
+.form-input[type="date"] {
+  color-scheme: dark;
+}
+
+.form-input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.signup-btn {
+  width: fit-content;
+  margin: 1rem auto 0;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: #1a1a1a;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.signup-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-logo {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .signup-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .signup-form {
+    gap: 1.5rem;
+  }
+
+  .form-input {
+    padding: 1rem 1.5rem;
+  }
+
+  .signup-btn {
+    padding: 0.875rem 3rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 1rem;
+  }
+
+  .brand-logo {
+    font-size: 2.5rem;
+  }
+
+  .signup-title {
+    font-size: 1.25rem;
+  }
+}

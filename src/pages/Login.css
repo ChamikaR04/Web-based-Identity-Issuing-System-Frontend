@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('../components/assest/Loginpage.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 2rem;
+}
+
+.login-content {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.brand-logo {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-input {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.login-input:focus {
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.login-btn {
+  width: fit-content;
+  margin: 1rem auto 0;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: #1a1a1a;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-text {
+  color: white;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.create-account-link {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.create-account-link:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.create-account-link:active {
+  color: #d0d0d0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-logo {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .login-form {
+    gap: 1.5rem;
+  }
+
+  .login-input {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .login-btn {
+    padding: 0.875rem 3rem;
+    font-size: 1rem;
+  }
+
+  .signup-text {
+    font-size: 0.9rem;
+  }
+
+  .create-account-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem;
+  }
+
+  .brand-logo {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .login-input {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .login-input::placeholder {
+    font-size: 0.875rem;
+  }
+
+  .signup-text {
+    font-size: 0.85rem;
+  }
+
+  .create-account-link {
+    font-size: 0.85rem;
+  }
+}

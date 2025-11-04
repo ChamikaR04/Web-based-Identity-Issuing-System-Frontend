@@ -1,0 +1,179 @@
+
+
+
+
+
+
+.navbar {
+
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #1a1a1a;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d4a574;
+}
+
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-icon:hover {
+    background-color: #a9a9a9;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+              url('../components/assest/project\ images/golf.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background-image {
+  min-height: 100vh;
+  
+  
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* Member Card */
+.member-card {
+    background: rgba(80, 80, 80, 0.85);
+    border-radius: 15px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.card-message {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: left;
+    border-top: 1px solid #333;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #888;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .member-card {
+        padding: 40px 20px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-message {
+        font-size: 16px;
+    }
+
+    .content-wrapper {
+        padding: 20px;
+    }
+}
